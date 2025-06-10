@@ -1,0 +1,137 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color:black;
+    width: 100%; 
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    overflow-x: hidden;  /* Impedisce lo scrolling orizzontale */
+    overflow-y: auto; 
+  } 
+
+  .flex-container {
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    padding-right: 16px;
+    height: 32px;
+    letter-spacing: normal;
+    min-height: 10px;
+    font-size: 12px;
+  }
+  @media(max-width:500px){
+    .flex-container{
+      display: none;
+    }
+  }
+  .flex-item-left{
+    flex: auto;
+    height: 16px;
+    overflow: hidden;
+  
+    line-height: 160%;
+    padding-right: 16px;
+    white-space: nowrap;
+  
+  }
+  .flex-item-right{
+    height: 16px;
+    overflow: hidden;
+    padding-right: 16px;
+    letter-spacing: .5px;
+    line-height: 120%;
+    margin: auto 0 auto 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+  }
+  a {
+      cursor: pointer;
+    color:black;
+    }
+  nav.flex-item-right a{
+     margin-left: 16px;
+      text-decoration: none;
+  }
+    a:hover {
+      text-decoration: underline;
+  }
+    a:visited{
+        color: #000;
+    }
+    #t1,#t2{
+      margin-left: 16px;
+  
+    }
+    .codici-sconto{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #9bdcd2;
+      color: #000;
+      height: 40px;
+      font-size:12px;
+    }
+    @media (max-width: 500px) {
+      .codici-sconto {
+          text-align:left; 
+          padding:5px;
+          font-size:11px;
+          height: auto;
+          text-align: center;
+      }
+  }
+    .logo { 
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra il logo orizzontalmente */
+    cursor: pointer; 
+    width: 100%;
+    height: 24px; /* Aggiunto px */
+    object-fit: contain;
+    order: 2;
+    margin:7px;
+} 
+
+.logo img {
+    width: 130px;
+    height: 100%;
+}
+input{
+    width: 35%;
+    height: 46px;
+    padding: 5px 11px;
+    border: 1px solid #d9dadc;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .submit input:hover{
+    cursor: pointer;
+    background-color: #3e3e3e;
+}
+.submit input{
+    padding: 16px 14px 18px;
+    height: 45px;
+    width: 15%;
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: #fff;
+    background-color: #000000;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+@media(max-width: 500px) {
+    .submit input{
+       width: 30%;
+       font-size:13.5px;
+    }
+    input{
+        width: 90%;
+        height:50px;
+    }
+}

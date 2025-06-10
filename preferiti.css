@@ -1,0 +1,300 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    font-weight: 400;
+    color: black;
+    box-sizing: border-box;
+    font-size: 11px;
+    padding-bottom: 60px;
+    background: radial-gradient(ellipse, 
+    rgb(158, 157, 157) 5%, 
+    rgb(192, 191, 191) 20%, 
+    #d2d2d2 40%, 
+    #bab9b9 60%, 
+    #969595 80%, 
+    #878585 100%);
+    overflow-x: hidden;
+}
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 35px;
+    background-color: #f0f0f0 ;
+    border: 3px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
+}
+
+.flex-container {
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    padding-right: 16px;
+    height: 32px;
+    letter-spacing: normal;
+    min-height: 10px;
+    font-size: 12px;
+}
+
+.flex-item-left {
+    flex: auto;
+    height: 16px;
+    overflow: hidden;
+    line-height: 160%;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+
+#t1, #t2 {
+    margin-left: 16px;
+}
+#t{
+    font-size: 14px;
+  
+}
+
+
+ header {
+     display: flex; 
+     justify-content: flex-end; 
+     margin-left: 683px;
+     padding: 10px 20px; 
+    } 
+  
+  .logo { 
+    position: absolute;
+    cursor: pointer; 
+    width: 130px; 
+    height: 24px; 
+    object-fit: contain;
+    top: 90px;
+    left:700px;
+    } 
+
+    .logo img{
+      width: 100%;
+      height: 100%;
+    }
+  .icons { 
+    display:flex; 
+    gap: 25px; 
+    background-color:transparent;
+    border:white; 
+    } 
+
+  .icon { 
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+  } 
+
+  
+   @media(max-width:500px) { 
+    .navbar{
+    flex-direction: column;
+    padding-top:20px;
+    } 
+  
+   .logo{ 
+    margin-bottom: 10px; 
+ 
+    left:180px;
+    }
+    .logo img{
+      width: 100%;
+      height: 100%;
+    }
+  
+    .icons {
+      display: flex; 
+      justify-content: space-around;
+      position: fixed; 
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background-color: #f2f2f2;
+      padding: 10px 0;
+      z-index: 1000; 
+    }
+ 
+    .icon {
+      width: 25px; 
+      height: auto;
+      margin-bottom: 10px;
+    }
+     
+   }
+   .prodotto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:570px;
+    width: 760px;
+    margin-bottom:10px;
+    border-radius: 3%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
+   position: relative;
+   background: radial-gradient(circle, white, white, whitesmoke);
+   gap:30px;
+   padding-left: 70px;
+  }
+  .prodotto:hover{
+   box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.505);
+   border:.5px solid rgb(151, 151, 151);
+  }
+  
+  .img-container{
+   height: 450px;
+   width:auto;
+   position: relative;
+  }
+  .img-container img{
+    display: block;
+    height: 100%;
+    width: auto;
+  }
+  .img-container .icon{ 
+    position: absolute; 
+    bottom: 20px; 
+    right: 10px; 
+    height: 30px;
+    width: 30px;
+  }
+
+  .descrizione-prodotto{
+    height:135px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .light-font{
+    font-weight: lighter;
+    color: #787676; 
+    font-size: 11px;
+    margin-top:0px;
+    margin-bottom:13px;
+   
+  }
+  .descrizione-prodotto .t{
+    font-size:12px;
+    letter-spacing: 0.5px;
+    margin-top:14.5px;
+    margin-bottom: 6px;
+  }
+  .descrizione-prodotto .desc{
+    margin-bottom:2px;
+    font-size:12px;
+    letter-spacing: 0.5px;
+  }
+  .descrizione-prodotto strong{
+    font-size:15px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+  
+  .offerta{
+    display: flex;
+    position: absolute;
+    height:30px;
+    text-align: center;
+    bottom: 20px;
+    right: 50px;
+    gap:20px;
+  }
+  .offerta div{
+    display: flex;
+    background-color: black;
+    color: white;
+    border:none;
+    margin-left:5px;
+    font-size:9.5px;
+    letter-spacing: 0.5px;
+    padding:0 3px;
+    align-items: center;
+  }
+  .aggiungi-al-carrello, .rimuovi-dal-carrello{
+      letter-spacing: 1px;
+      color: #535151;
+      background-color: #d2cfcf;
+      cursor: pointer;
+      padding: auto;
+      border: none;     
+      font-size: 11px;
+  }
+.aggiungi-al-carrello:hover, .rimuovi-dal-carrello:hover{
+   color: #000;
+}
+
+  .catalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  @media(max-width:500px){
+    .catalogo{
+        margin:40px;
+    }
+.offerta{
+  gap:15;
+  right: 40px;
+}
+  .offerta div{
+    padding:auto;
+    height: 27px;
+    
+  }
+  .aggiungi-al-carrello, .rimuovi-dal-carrello{
+    padding: auto;
+   height: 27px;
+  }
+    .prodotto{
+    height:550px;
+    width: 400px;
+    margin-bottom:8px;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 0;
+    justify-content: space-around;
+    padding-left: 0;
+    gap:0;
+  }
+  
+  .img-container{
+   height: 360px;
+  }
+    .img-container img{
+    height: 100%;
+    width: auto;
+  }
+ 
+  .light-font{
+    font-size: 10.5px;
+  }
+  .descrizione-prodotto .t{
+    font-size:11px;
+  }
+  .descrizione-prodotto .desc{
+    font-size:11px;
+  
+  }
+  .descrizione-prodotto strong{
+    font-size:14px;
+
+  }
+  
+  .offerta{
+    height:20px;
+    font-size: 10px;
+  }
+
+}
+.vuoto{
+  font-size: 15px;
+  font-weight: 400;
+  margin-top:200px;
+}

@@ -1,0 +1,486 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    font-weight: 400;
+    color: black;
+    box-sizing: border-box;
+    font-size: 11px;
+    padding-bottom: 60px;
+    background: radial-gradient(ellipse, 
+    rgb(158, 157, 157) 5%, 
+    rgb(192, 191, 191) 20%, 
+    #d2d2d2 40%, 
+    #bab9b9 60%, 
+    #969595 80%, 
+    #878585 100%);
+    overflow-x: hidden;
+
+}
+
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 35px;
+    background-color: #f0f0f0 ;
+    border: 3px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
+}
+
+.flex-container {
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    padding-right: 16px;
+    height: 32px;
+    letter-spacing: normal;
+    min-height: 10px;
+    font-size: 12px;
+}
+
+.flex-item-left {
+    flex: auto;
+    height: 16px;
+    overflow: hidden;
+    line-height: 160%;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+
+#t1, #t2 {
+    margin-left: 16px;
+}
+#t{
+    font-size: 14px;
+  
+}
+
+
+ header {
+     display: flex; 
+     justify-content: flex-end; 
+     margin-left: 683px;
+     padding: 10px 20px; 
+    } 
+  
+  .logo { 
+    position: absolute;
+    cursor: pointer; 
+    width: 130px; 
+    height: 24px; 
+    object-fit: contain;
+    top: 90px;
+    left:700px;
+    } 
+
+    .logo img{
+      width: 100%;
+      height: 100%;
+    }
+  .icons { 
+    display:flex; 
+    gap: 25px; 
+    background-color:transparent;
+    border:white; 
+    } 
+
+  .icon { 
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+  } 
+
+  
+   @media(max-width:500px) { 
+    .navbar{
+    flex-direction: column;
+    padding-top:20px;
+    } 
+  
+   .logo{ 
+    margin-bottom: 10px; 
+ 
+    left:180px;
+    }
+    .logo img{
+      width: 100%;
+      height: 100%;
+    }
+  
+    .icons {
+      display: flex; 
+      justify-content: space-around;
+      position: fixed; 
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background-color: #f2f2f2;
+      padding: 10px 0;
+      z-index: 1000; 
+    }
+ 
+    .icon {
+      width: 25px; 
+      height: auto;
+      margin-bottom: 10px;
+    }
+     
+   }
+   .prodotto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:430px;
+    width: 570px;
+    margin-bottom:10px;
+    border-radius: 3%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
+    position: relative;
+    background: radial-gradient(circle, white, white, whitesmoke);
+    gap:30px;
+    padding-left: 70px;
+  }
+  .prodotto:hover{
+   box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.505);
+   border:.5px solid rgb(151, 151, 151);
+  }
+  
+  .img-container{
+   height: 330px;
+   width:auto;
+   position: relative;
+  }
+  .img-container img{
+    display: block;
+    height: 100%;
+    width: auto;
+  }
+  .img-container .icon{ 
+    position: absolute; 
+    bottom: 20px; 
+    right: 10px; 
+    height: 30px;
+    width: 30px;
+  }
+
+  .descrizione-prodotto{
+    height:135px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .light-font{
+    font-weight: lighter;
+    color: #787676; 
+    font-size: 11px;
+    margin-top:0px;
+    margin-bottom:13px;
+   
+  }
+  .descrizione-prodotto .t{
+    font-size:12px;
+    letter-spacing: 0.5px;
+    margin-top:14.5px;
+    margin-bottom: 6px;
+  }
+  .descrizione-prodotto .desc{
+    margin-bottom:2px;
+    font-size:12px;
+    letter-spacing: 0.5px;
+  }
+  .descrizione-prodotto strong{
+    font-size:15px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+  
+  .offerta{
+    display: flex;
+    position: absolute;
+    height:30px;
+    text-align: center;
+    bottom: 20px;
+    right: 50px;
+    gap:20px;
+  }
+  .offerta div{
+    display: flex;
+    background-color: black;
+    color: white;
+    border:none;
+    margin-left:5px;
+    font-size:9.5px;
+    letter-spacing: 0.5px;
+    padding:0 3px;
+    align-items: center;
+  }
+  .aggiungi-al-carrello, .rimuovi-dal-carrello{
+      letter-spacing: 1px;
+      color: #535151;
+      background-color: #d2cfcf;
+      cursor: pointer;
+      padding: auto;
+      border: none;     
+      font-size: 11px;
+  }
+.aggiungi-al-carrello:hover, .rimuovi-dal-carrello:hover{
+   color: #000;
+}
+
+  .catalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 160px;
+  }
+  @media(max-width:500px){
+    .catalogo{
+        margin:40px;
+    }
+.offerta{
+  gap:15;
+  right: 40px;
+}
+  .offerta div{
+    padding:auto;
+    height: 27px;
+    
+  }
+  .aggiungi-al-carrello, .rimuovi-dal-carrello{
+    padding: auto;
+   height: 27px;
+  }
+    .prodotto{
+    height:520px;
+    width: 370px;
+    margin-bottom:8px;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 0;
+    justify-content: space-around;
+    padding-left: 0;
+    gap:0;
+  }
+  
+  .img-container{
+   height: 330px;
+  }
+    .img-container img{
+    height: 100%;
+    width: auto;
+  }
+ 
+  .light-font{
+    font-size: 10.5px;
+  }
+  .descrizione-prodotto .t{
+    font-size:11px;
+  }
+  .descrizione-prodotto .desc{
+    font-size:11px;
+  
+  }
+  .descrizione-prodotto strong{
+    font-size:14px;
+
+  }
+  
+  .offerta{
+    height:20px;
+    font-size: 10px;
+  }
+
+}
+.acquisto{
+  position: absolute;
+  top:270px;
+  left: 30px;
+  background-color: white;
+  width: 420px;
+  height: auto;
+  padding: 10px 30px;
+  font-size: 12px;
+  border-radius: 2%;
+  box-shadow: 2px 2px 5px rgba(23, 23, 23, 0.433);
+
+}
+@media(max-width:500px){
+  .acquisto{
+    position:static;
+    width:90vw;
+    font-size: 11px;
+    border-radius: 0%;
+    padding:15px 20px;
+  }
+}
+.prodotti-da-acquistare div{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: auto;
+}
+.scelta{
+  font-size: larger;
+}
+hr {
+    border: none;
+    height: .3px;
+    background-color: rgb(43, 42, 42);
+}
+.tot{
+  margin-top: 30px;
+  font-size: 15px;
+}
+ #applica_buono{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    font-size: 9.5px;
+    letter-spacing: 0.5px;
+    padding:5px;
+    cursor: pointer;
+}
+#applica_buono:hover{
+  background-color: #1d1c1ce0;
+}
+.hidden{
+  display:none;
+}
+.pezzi{
+  position: absolute;
+  top:40px;
+  right:20px;
+  height:27px;
+  width: auto;
+}
+@media(max-width:500px){
+  .pezzi{
+    height: 25px;
+     right:10px;
+     width:40px;
+  }
+}
+.costo-totale{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.spedizione{
+  color:red;
+  display: flex;
+  justify-content: space-between;
+  margin:4px 1px;
+}
+
+#al-pagamento{
+    background-color: black;
+    color: white;
+    border:none;
+    margin-left:5px;
+    font-size:10px;
+    letter-spacing: 0.5px;
+    padding: 3px;
+    height: 30px;
+    width:95px;
+    margin-left: -5px;
+}
+#al-pagamento:hover{
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
+.pagamento{
+  position: fixed;
+  top:150px;
+  left:550px;
+  height:520px;
+  width: 600px;
+  background-color: whitesmoke;
+  box-shadow: 8px 8px 11px rgba(0, 0, 0, 0.547);
+   border:.5px solid rgb(151, 151, 151);
+   padding-left: 20px;
+   padding-bottom: 20px;
+}
+@media(max-width:500px){
+  .pagamento{
+  top:25px;
+  left:0;
+  height:480px;
+   width: 95vw;
+   padding-left: 20px;
+   padding-bottom: 20px;
+}
+}
+
+.ordina,.verifica{
+    background-color: black;
+    color: white;
+    border:none;
+    margin-left:5px;
+    font-size:9.5px;
+    letter-spacing: 0.5px;
+    padding: 3px;
+    height: 30px;
+    width:80px;
+    font-size: 14px;
+    margin: 15px 10px;
+}
+.ordina:hover,.verifica:hover{
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
+
+.pagamento-hidden{
+  display: none;
+}
+
+.acquisto-avvenuto {
+    background-color: white;
+    position: absolute;
+    border-radius: 2%;
+    height:30px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    top:380px;
+    box-shadow: 2px 2px 5px rgba(23, 23, 23, 0.433);
+    z-index: 9999;
+}
+
+.vuoto{
+  margin-left: -160px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 200px;
+}
+  .form-group {
+        margin-bottom: 11px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+        margin-left: 15px;
+    }
+
+    .form-group input[type="text"] {
+        width: 90%; 
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
